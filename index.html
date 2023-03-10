@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tallet</title>
+    <style>
+        body{
+            text-align: center;
+            font-size: 22px;
+        }
+        #app{
+            font-size: 65px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Vis frem et tall</h1>
+    <p id="app">0</p>
+    <button onclick="øk()">Øk tallet</button>
+    <button onclick="reduser()">Reduser tallet</button>
+    <button onclick="gange()">Gange med 2</button>
+    <button onclick="dele()">Dele med 2</button>
+    <button onclick="nullW()">Null</button>
+
+
+
+
+    <script>
+      var tallet = 0;
+      function oppdater() {
+        document.getElementById("app").innerHTML = tallet;
+      }
+      function øk() {
+        tallet = tallet + 4;
+        oppdater();
+      }
+      function reduser() {
+        tallet = tallet - 2;
+        oppdater();
+      }
+      function gange() {
+        tallet = tallet * 2;
+        oppdater();
+      }
+      function dele() {
+        tallet = tallet / 2;
+        oppdater();
+      }
+      function nullW() {
+        tallet = tallet = 0;
+        oppdater();
+      }
+    </script>
+</body>
+</html>
